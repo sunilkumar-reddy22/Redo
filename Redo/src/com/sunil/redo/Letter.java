@@ -3,7 +3,7 @@ package com.sunil.redo;
 public class Letter {
     public static void main(String[] args) {
         char[] letters = {'c', 'f', 'j'};
-        char target = 'a';
+        char target = 'f';
         char ans = search(letters,target);
         System.out.println(ans);
     }
