@@ -12,7 +12,7 @@ public class SearchTarget {
         int start = 0;
         int end = nums.length - 1;
         int ans = -1;
-        while(start <= end) {
+        while(start <= end) { //forgot to add where to start and the length.
             int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
                 return mid;
