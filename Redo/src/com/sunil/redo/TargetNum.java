@@ -7,7 +7,7 @@ public class TargetNum {
       int ans =  search(nums, target);
         System.out.println(ans);
     }
-
+   //target element
     static int search(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
