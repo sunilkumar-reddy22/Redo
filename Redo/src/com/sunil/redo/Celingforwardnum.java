@@ -24,7 +24,7 @@ public class Celingforwardnum {
             } else {
                 //if mid is greater than target the save mid = target because we need to return if not found tha target return greater val of its
                 //so this might be the ans.
-                //however we check last possible.
+                //however we check last possible
                 ans = mid;
                 end = mid - 1;
             }
