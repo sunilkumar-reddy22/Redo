@@ -3,7 +3,7 @@ package Redoone;
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18};
-        int target = 17;
+        int target = 10;
       int ans =  Search(nums, target);
         System.out.println(ans);
     }
