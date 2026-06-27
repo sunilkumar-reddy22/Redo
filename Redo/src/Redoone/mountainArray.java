@@ -2,7 +2,7 @@ package Redoone;
 
 public class mountainArray {
     public static void main(String[] args) {
-        int[] nums = {1,3,2};
+        int[] nums = {2,1};
        int ans = search(nums);
         System.out.println(ans);
     }
@@ -14,7 +14,7 @@ public class mountainArray {
             int mid = start + (end - start) / 2;
             if (nums[mid] > nums[mid + 1]) {
                 end = mid;
-            } else {
+            } else { // nums[mid] < nums[mid + 1]
                 start = mid + 1;
             }
         }
