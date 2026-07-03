@@ -1,7 +1,6 @@
 package Redoone;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
 public class SprialMatrix {
     public static void main(String[] args) {
         int[][] matrix = {
