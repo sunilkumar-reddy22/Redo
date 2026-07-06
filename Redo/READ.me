@@ -1,0 +1,47 @@
+# 875. Koko Eating Bananas
+
+## Approach
+
+We need to find the minimum eating speed (`k`) such that Koko can finish all the banana piles within `h` hours.
+
+We use **Binary Search on the Answer**.
+
+### Search Space
+
+- **Low = 1**
+  - Minimum possible eating speed.
+
+- **High = Maximum pile**
+  - Koko never needs to eat faster than the largest pile.
+
+For every guessed speed (`mid`), calculate the total hours required:
+
+```java
+hours += (pile + mid - 1) / mid;
+```
+
+This performs ceiling division without using `Math.ceil()`.
+
+- If `hours > h`
+  - Speed is too slow.
+  - Search the right half.
+
+- Else
+  - Speed works.
+  - Search the left half to find a smaller valid speed.
+
+## Time Complexity
+
+O(n × log(maxPile))
+
+## Space Complexity
+
+O(1)
+
+## Key Takeaways
+
+- Binary Search on the Answer
+- Ceiling Division:
+  `(pile + speed - 1) / speed`
+- If `hours > h` → increase speed.
+- Otherwise → try a smaller speed.
