@@ -16,7 +16,7 @@ public class CycleSort {
             if(nums[i] != nums[correct]){
                 swap(nums,i,correct);
             }else{
-                i++; //if found correct values then skip the swap and go forward to check.
+                i++; //if found correct values then skip the swap and go forward
             }
 
         }
