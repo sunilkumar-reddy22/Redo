@@ -5,7 +5,6 @@ public class SwapTwoNumbers {
         int temp = 0;
         int a = 10;
         int b = 5;
-        System.out.println(a + " " + b);
         temp = a;
         a = b;
         b = temp;
