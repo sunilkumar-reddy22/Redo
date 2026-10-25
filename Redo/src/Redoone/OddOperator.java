@@ -6,6 +6,7 @@ public class OddOperator {
         System.out.println(Find(n));
     }
     static boolean Find(int n){
+
         return (n &  1) == 1;
     }
 }
