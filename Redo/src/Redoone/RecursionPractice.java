@@ -2,7 +2,8 @@ package Redoone;
 
 public class RecursionPractice {
     public static void main(String[] args) {
-        message();
+      //  message();
+        print1(1);
 
     }
     static void message(){
@@ -23,6 +24,14 @@ public class RecursionPractice {
     }
     static void message4() {
         System.out.println("hey sunil");
+    }
+    static void print1(int n) {
+        if (n == 20) {
+            System.out.println(n);
+            return;
+        }
+        System.out.print(n + "," + "");
+        print1(n + 1);
     }
 }
 //its executing every block of code and calling function and going and printing and lastly it returns where it called from and lastly it reaches to main function and diconnect.
