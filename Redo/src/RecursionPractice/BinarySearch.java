@@ -20,6 +20,6 @@ public class BinarySearch {
             //hence my answer lies on the left side,so i do end = mid -1.
             return search(arr, target, s , e -1);
         }
-        return search(arr, target, s + 1 , e);
+        return search(arr, target, m +1 , e);
     }
 }
